@@ -1,0 +1,4 @@
+.build/
+.swiftpm/
+YTUploader.app/
+.DS_Store
