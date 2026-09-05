@@ -26,6 +26,7 @@ struct JobEditorView: View {
     @State private var previousTitle: String?
     @State private var previousDescription: String?
     @State private var previousTags: String?
+    @State private var showingORFImport = false
 
     init(existing: UploadJob?, onSave: @escaping (UploadJob) -> Void) {
         self.existing = existing
@@ -52,6 +53,14 @@ struct JobEditorView: View {
                 }
 
                 Section("Details") {
+                    HStack {
+                        Button {
+                            showingORFImport = true
+                        } label: {
+                            Label("Text von tv.ORF.at übernehmen …", systemImage: "tray.and.arrow.down")
+                        }
+                        Spacer()
+                    }
                     HStack {
                         TextField("Titel", text: $title)
                             .onChange(of: title) { newValue in
@@ -121,6 +130,15 @@ struct JobEditorView: View {
         }
         .frame(width: 560, height: 700)
         .onAppear(perform: loadExisting)
+        .sheet(isPresented: $showingORFImport) {
+            ORFImportView { newTitle, newText in
+                // In die Rückgängig-Funktion des ✨-Menüs einhängen
+                previousTitle = title
+                previousDescription = videoDescription
+                title = newTitle
+                videoDescription = newText
+            }
+        }
     }
 
     /// Veröffentlichungstermine aller anderen Aufträge (für den Kalender).

@@ -60,6 +60,34 @@ bestehen.
   `publishAt`). Benutzerdefinierte Thumbnails erfordern ein für Thumbnails
   freigeschaltetes Konto (Telefonnummer bei YouTube bestätigt).
 
+## Texte von tv.ORF.at übernehmen
+
+Im Auftrags-Editor gibt es oben den Knopf **„Text von tv.ORF.at übernehmen …“**.
+Dort wählst du die **Sendung** (Bürgeranwalt, Report, Thema, ECO, Am Schauplatz,
+Am Schauplatz Gericht, Daheim, betrifft: uns, WeltWeit oder eine freie Eingabe)
+und das **Sendedatum**. Nach „Beiträge laden“ zeigt die App alle Beiträge der
+Sendung; ein Klick wählt einen aus, „Übernehmen“ trägt ihn ein:
+
+- **Beschreibung:** der vollständige Beitragstext
+- **Titel:** Beitragstitel + `| Sendungsname TT.MM.JJJJ`
+  (z. B. „Streit um Lifteinbau | Bürgeranwalt 05.09.2026“). Wird das
+  YouTube-Limit von 100 Zeichen überschritten, kürzt die App den Beitragstitel
+  und behält den Zusatz.
+
+Sendung und Datum werden gemerkt — für den nächsten Beitrag derselben Sendung
+genügt also ein Klick auf „Beiträge laden“.
+
+Hinweise:
+
+- Reine Reportagen ohne Beitragsgliederung (z. B. „WeltWeit“, „betrifft: uns“)
+  werden als **ein** Beitrag mit dem Episodentitel übernommen.
+- Das ORF-Programmarchiv reicht **rund 30 Tage zurück** und einige Wochen
+  voraus. Für ältere Sendungen findet die App nichts.
+- Bei noch nicht ausgestrahlten Sendungen sind die Beitragstexte oft erst
+  wenige Tage vorher online.
+- Findet die App die Sendung nicht, zeigt sie, was an dem Tag tatsächlich lief —
+  meist hilft dann die freie Eingabe mit dem Namen aus dem ORF-Programm.
+
 ## Optional: KI-Texthilfe (OpenAI)
 
 Im Auftrags-Editor gibt es neben Titel, Beschreibung und Tags einen ✨-Knopf:

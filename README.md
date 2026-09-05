@@ -16,6 +16,9 @@ Schlanke, native macOS-App (SwiftUI, keine externen Abhängigkeiten) zum
 - **Geplante Veröffentlichung:** Termin wählen, YouTube schaltet das Video zum
   Zeitpunkt automatisch öffentlich. Ein Monatskalender markiert Tage, an denen
   bereits Videos geplant sind.
+- **ORF-Import:** Sendung und Sendedatum wählen — die App holt die Beiträge
+  direkt von tv.ORF.at und trägt Titel (inkl. „| Sendung Datum“) und
+  Beschreibungstext ein.
 - **KI-Texthilfe (optional):** Titel und Beschreibung per OpenAI-API verbessern
   oder verlängern, passende Tags vorschlagen lassen.
 - **Sicher:** OAuth-Anmeldung bei Google (PKCE, Loopback), Tokens und API-Keys
